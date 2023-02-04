@@ -13,9 +13,10 @@ public class Note {
 	private String content;
 	private String title;
 	private Date addedDate;
-	public Note(int id, String content, String title, Date addedDate) {
+	public Note( String content, String title, Date addedDate) {
 		super();
-		this.id = id;
+		Random rd=new Random();
+		this.id = rd.nextInt(1000);
 		this.content = content;
 		this.title = title;
 		this.addedDate = addedDate;

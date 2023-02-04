@@ -13,12 +13,12 @@
 	<form action="saveNoteServlet" method="post">
 	  <div class="mb-3">
 	    <label for="title" class="form-label">Title</label>
-	    <input type="text" class="form-control" id="title" aria-describedby="title_help" required>
+	    <input type="text" class="form-control" id="title" aria-describedby="title_help" name="addTitle" required>
 <!-- 	    <div id="title_help" class="form-text">We'll never share your email with anyone else.</div> -->
 	  </div>
 	  <div class="mb-3">
 	    <label for="content" class="form-label">Note Content</label>
-	   <textarea class="form-control" id="content" placeholder="enter you content here..." style="height:300px;" required ></textarea>
+	   <textarea class="form-control" id="content" placeholder="enter you content here..." style="height:300px;" name="addContent" required ></textarea>
 	  </div>
 
      <div class="container text-center">
